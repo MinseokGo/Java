@@ -1,2 +1,2 @@
-# MinseokGo Java source Repositoty
+# MinseokGo Java source Repository
 Java src
