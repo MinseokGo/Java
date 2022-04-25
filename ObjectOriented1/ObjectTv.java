@@ -1,20 +1,20 @@
 class Tv {
-		// TVÀÇ ¼Ó¼º(¸â¹öº¯¼ö)
-		String color;	// »ö±ò
-		boolean power;	// Àü¿ø»óÅÂ
-		int channel;	// Ã¤³Î
+		// TVì˜ ì†ì„±(ë©¤ë²„ë³€ìˆ˜)
+		String color;	// ìƒ‰ê¹”
+		boolean power;	// ì „ì›ìƒíƒœ
+		int channel;	// ì±„ë„
 		
-		// TVÀÇ ±â´É(¸Ş¼­µå)	
-		void power() { power = !power; }	// TV¸¦ ÄÑ°Å³ª ²ô´Â ±â´ÉÀ» ÇÏ´Â ¸Ş¼­µå
-		void channelUp() { ++channel; }		// TVÀÇ Ã¤³ÎÀ» ³ôÀÌ´Â ±â´ÉÀ» ÇÏ´Â ¸Ş¼­µå
-		void channelDown() { --channel; }	// TVÀÇ Ã¤³ÎÀ» ³·Ãß´Â ±â´ÉÀ» ÇÏ´Â ¸Ş¼­µå
+		// TVì˜ ê¸°ëŠ¥(ë©”ì„œë“œ)	
+		void power() { power = !power; }	// TVë¥¼ ì¼œê±°ë‚˜ ë„ëŠ” ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œ
+		void channelUp() { ++channel; }		// TVì˜ ì±„ë„ì„ ë†’ì´ëŠ” ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œ
+		void channelDown() { --channel; }	// TVì˜ ì±„ë„ì„ ë‚®ì¶”ëŠ” ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œ
 }
 class TvTest {
 	public static void main(String[] args) {
-		Tv t = new Tv();			// Å¬·¡½ºÀÇ °´Ã¼¸¦ ÂüÁ¶ÇÏ±â À§ÇÑ ÂüÁ¶º¯¼ö ¼±¾ğ
-								// Å¬·¡½ºÀÇ °´Ã¼¸¦ »ı¼ºÇÑ ÈÄ, °´Ã¼ÀÇ ÁÖ¼Ò¸¦ ÂüÁ¶º¯¼ö¿¡ ÀúÀå
+		Tv t = new Tv();			// í´ë˜ìŠ¤ì˜ ê°ì²´ë¥¼ ì°¸ì¡°í•˜ê¸° ìœ„í•œ ì°¸ì¡°ë³€ìˆ˜ ì„ ì–¸
+							// í´ë˜ìŠ¤ì˜ ê°ì²´ë¥¼ ìƒì„±í•œ í›„, ê°ì²´ì˜ ì£¼ì†Œë¥¼ ì°¸ì¡°ë³€ìˆ˜ì— ì €ì¥
 		t.channel = 5;
 		t.channelDown();
-		System.out.println("ÇöÀç Ã¤³ÎÀº" + t.channel + " ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ ì±„ë„ì€" + t.channel + " ì…ë‹ˆë‹¤.");
 	}
 }
