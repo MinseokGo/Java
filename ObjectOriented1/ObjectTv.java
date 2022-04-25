@@ -11,8 +11,8 @@ class Tv {
 }
 class TvTest {
 	public static void main(String[] args) {
-		Tv t = new Tv();			// 클래스의 객체를 참조하기 위한 참조변수 선언
-							// 클래스의 객체를 생성한 후, 객체의 주소를 참조변수에 저장
+		Tv t = new Tv();		// 클래스의 객체를 참조하기 위한 참조변수 선언
+						// 클래스의 객체를 생성한 후, 객체의 주소를 참조변수에 저장
 		t.channel = 5;
 		t.channelDown();
 		System.out.println("현재 채널은" + t.channel + " 입니다.");
