@@ -1,6 +1,6 @@
 public class Time {
-	private int hour;		// Á¦¾îÀÚ¸¦ ÅëÇØ º¯¼öÀÇ °ªÀ» Á÷Á¢ º¯°æÇÏÁö ¸øÇÔ
-	private int minute;		//get, set ¸Ş¼­µå¸¦ ÅëÇØ¼­¸¸ °´Ã¼ÀÇ º¯¼ö¿¡ Á¢±Ù °¡´É
+	private int hour;		// ì œì–´ìë¥¼ í†µí•´ ë³€ìˆ˜ì˜ ê°’ì„ ì§ì ‘ ë³€ê²½í•˜ì§€ ëª»í•¨
+	private int minute;		// get, set ë©”ì„œë“œë¥¼ í†µí•´ì„œë§Œ ê°ì²´ì˜ ë³€ìˆ˜ì— ì ‘ê·¼ ê°€ëŠ¥
 	private float second;
 	
 	public int getHour() { return hour; }
@@ -28,14 +28,14 @@ class TimeTest {
 		Time t = new Time();
 		
 		t.setHour(23);
-		//t.hour = 1; ´Â ºÒ°¡´É
+		// t.hour = 1; ëŠ” ë¶ˆê°€ëŠ¥
 		
 		t.setMinute(59);
-		//t.minute = 59; ´Â ºÒ°¡´É
+		// t.minute = 59; ëŠ” ë¶ˆê°€ëŠ¥
 		
 		t.setSecond(59.99f);
-		//t.second = 59.99f; ´Â ºÒ°¡´É
+		// t.second = 59.99f; ëŠ” ë¶ˆê°€ëŠ¥
 		
-		System.out.printf("ÁöÁ¤µÈ ½Ã°¢Àº %d½Ã %dºĞ %fÃÊÀÔ´Ï´Ù.", t.getHour(), t.getMinute(), t.getSecond());
+		System.out.printf("ì§€ì •ëœ ì‹œê°ì€ %dì‹œ %dë¶„ %fì´ˆì…ë‹ˆë‹¤.", t.getHour(), t.getMinute(), t.getSecond());
 	}
 }
