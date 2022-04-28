@@ -4,7 +4,7 @@ class MyMathTest {
 		long resultAdd = my.add(5L, 3L);
 		long resultSub = my.sub(5L, 3L);
 		long resultMul = my.mul(5L, 3L);
-		double resultDiv = my.div(5L, 3L);
+		double resultDiv = my.div(5L, 3L);	// double형으로 자동 형변환
 		
 		System.out.printf("5 + 3 = %d\n", resultAdd);
 		System.out.printf("5 - 3 = %d\n", resultSub);
